@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Tere tulemast";
+}
+<!--Страница приветствие. Тут я всё перевёл на эстонский язык. Tere повторяется один раз.-->
+<h2>Tere tulemast!</h2>
+
+<ul>
+    @for (int i = 0; i < ViewBag.NumTimes; i++)
+    {
+        <li>@ViewBag.Message</li>
+    }
+</ul>

@@ -1,0 +1,23 @@
+﻿@model MvcMovie.Models.Movie
+
+@{
+    ViewBag.Title = "Andmed";
+}
+
+<!--На странице Deails, я перевёл всё на эстонский язык. -->
+<h2>Andmed</h2>
+
+<div>
+    <h4>Raamat</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        @*Markup omitted for clarity.*@
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Muuda", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Tagasi", "Index")
+</p>
